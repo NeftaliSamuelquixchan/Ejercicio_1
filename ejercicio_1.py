@@ -29,13 +29,21 @@ def MULTIPLICACION():  # Comando para multiplicacion
        print(f"\nRESULTADO: {num1} * {num2} = {resultado}")
        input("presione Enter para continuar . . .")
 
+def DIVICION():  # Comando para divicion 
+    print("divicion")
+    num1, num2 = DATOS()
+    resultado = num1 / num2 
+    print(f"\nRESULTADO: {num1} / {num2} = {resultado}")
+    input("presione Enter para continuar . . .")
+      
+
 
 while True:
     limpiar_consola()
-    print("1. suma")
-    print("2. resta")
-    print("3. ultiplicacion")
-    print("4. divicion")
+    print("1. Suma")
+    print("2. Resta")
+    print("3. Multiplicacion")
+    print("4. Divicion")
     opcion = input("Ingresar el numero de la opcion: ")
 
     if opcion == '1':
@@ -44,6 +52,9 @@ while True:
              RESTA()
     elif opcion == '3':
             MULTIPLICACION()
+    elif opcion == '4':
+            DIVICION()
+
     print(f"\nSalir del sistema . . . adios")
     break
 else:
